@@ -41,7 +41,9 @@
     "screenshot": "screenshot.png",
     "favicon": "",
     "noImageResize": "",
-    "сanonical-url": ""
+    "сanonical-url": "",
+    "publishType": "local",
+    "publishPath": "file:///Users/adnanfatayerji/Desktop/Websites/www_enertia_io"
   },
   "pages": {
     "index.html": {
