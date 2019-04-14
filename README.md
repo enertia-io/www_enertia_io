@@ -2,4 +2,3 @@
 
 This repository(enertia.io) to serve as landing page for https://enertia.tech
 
-test
