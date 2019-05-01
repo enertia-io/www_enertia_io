@@ -1,0 +1,14 @@
+:80 {
+    bind 0.0.0.0
+    gzip
+    root /opt/www_enertia_io/
+    log stdout
+    git {
+        repo https://github.com/enertia-io/www_enertia_io.git
+        branch master
+        hook /webhook "test9278"
+        hook_type generic
+        key /root/.ssh/id_rsa
+        path /opt/www_enertia_io/
+    }
+}
