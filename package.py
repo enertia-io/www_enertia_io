@@ -3,11 +3,7 @@ from Jumpscale import j
 
 class Package(j.baseclasses.threebot_package):
     def _init(self, **kwargs):
-        if "branch" in kwargs.keys():
-            self.branch = kwargs["branch"]
-        else:
-            self.branch = "master"
-
+        self.branch = kwargs["package"].branch or "master"
         self.enertia_io = "https://github.com/enertia-io/www_enertia_io.git"
 
     def prepare(self):
