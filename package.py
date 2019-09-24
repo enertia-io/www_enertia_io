@@ -1,7 +1,11 @@
 from Jumpscale import j
 
-
 class Package(j.baseclasses.threebot_package):
+    """
+    to start need to run 
+    kosmos -p "j.tools.threebot_packages.get('enertia_master',giturl='https://github.com/enertia-io/www_enertia_io.git',branch='master')"
+    kosmos -p "j.servers.threebot.default.start(web=True, ssl=False)"
+    """
     def _init(self, **kwargs):
         self.branch = kwargs["package"].branch or "master"
         self.enertia_io = "https://github.com/enertia-io/www_enertia_io.git"
