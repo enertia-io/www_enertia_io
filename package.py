@@ -18,7 +18,7 @@ class Package(j.baseclasses.threebot_package):
         server = self.openresty
         server.install(reset=True)
         server.configure()
-        website = server.get_from_port(80)
+        website = server.get_from_port(443)
         locations = website.locations.get("enertia_locations")
         locations = website.locations.get("enertia_io")
         static_location = locations.locations_static.new()
