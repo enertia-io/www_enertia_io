@@ -21,7 +21,6 @@ class Package(j.baseclasses.threebot_package):
         server.install(reset=True)
         server.configure()
         website = server.get_from_port(80)
-        locations = website.locations.get("enertia_locations")
         locations = website.locations.get("enertia_io")
         static_location = locations.locations_static.new()
         static_location.name = "static"
