@@ -24,7 +24,7 @@ class Package(j.baseclasses.threebot_package):
         locations = website.locations.get("enertia_io")
         static_location = locations.locations_static.new()
         static_location.name = "static"
-        static_location.path_url = "/entera"
+        static_location.path_url = "/"
         path = j.clients.git.getContentPathFromURLorPath(self.enertia_io, branch=self.branch, pull=True)
         static_location.path_location = path
         static_location.use_jumpscale_weblibs = True
