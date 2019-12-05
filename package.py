@@ -1,6 +1,11 @@
 from Jumpscale import j
 
 class Package(j.baseclasses.threebot_package):
+    """
+    kosmos -p
+    cl = j.servers.threebot.local_start_default()
+    j.threebot.packages.zerobot.packagemanager.actors.package_manager.package_add(git_url="https://github.com/enertia-io/www_enertia_io")
+    """
 
     def _init(self, **kwargs):
         self.branch = kwargs["package"].branch or "master"
