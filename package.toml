@@ -1,0 +1,13 @@
+[source]
+name = "enertia_io"
+description = "enertia_io website"
+threebot = "zerobot"
+version = "1.0.0"
+
+[actor]
+namespace = "enertia-ioacns" 
+
+[[bcdbs]]
+namespace = "enertia_io_ns"
+type = "redis"
+instance = "default"
