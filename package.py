@@ -2,6 +2,9 @@ from Jumpscale import j
 
 class Package(j.baseclasses.threebot_package):
 
+    def _init(self, **kwargs):
+        self.branch = kwargs["package"].branch or "master"
+        self.enertia_io = "https://github.com/enertia-io/www_enertia_io"
     def start():
         self.enertia_io = "https://github.com/enertia-io/www_enertia_io"
         website = self.openresty.get_from_port(443)
